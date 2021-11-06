@@ -116,6 +116,16 @@ body {
     height: 20%;
 }
 
+#moreProjects {
+    text-align: center;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+#moreProjects:hover {
+    text-decoration: underline;
+}
+
 
 #contact {
     background-color: var(--blue);
