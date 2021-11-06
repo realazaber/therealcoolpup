@@ -140,7 +140,11 @@ body {
 input, textarea {
     border: 1px solid #979797;
     padding: 15px;
-    
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #979797;
+    border-bottom: 5px solid var(--cyan);
 }
 
 #btnSubmit {
