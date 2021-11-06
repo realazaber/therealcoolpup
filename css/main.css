@@ -24,13 +24,14 @@ body {
 .wave {
     width: 100%;
     z-index: 1;
+    margin: -1;
 }
 
 nav {
     position: fixed;
     right: 1em;
     top: 100px;
-    padding-right: 3em;
+    margin-right: 3em;
     z-index: 2;
 }
 
@@ -91,6 +92,7 @@ nav a:hover {
 
 #profileImg {
     padding-right: 1em;
+    
 }
 
 #projectsList {
