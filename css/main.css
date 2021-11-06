@@ -104,7 +104,6 @@ body {
 
 .projectText {
   color: var(--blue);
-  font-size: 30px;
   
 }
 
@@ -281,7 +280,7 @@ input:focus, textarea:focus {
     }
 
     .projectText {
-        font-size: medium;
+        font-size: 1em;
         
     }
 
