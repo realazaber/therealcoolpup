@@ -213,6 +213,10 @@ input, textarea {
         
     }
 
+    #contactForm {
+        font-size: x-large;
+    }
+
     input, textarea {
         width: 50%;
     }
@@ -254,17 +258,23 @@ input, textarea {
 
     .projectText {
     
-        font-size: medium;
+        font-size: x-large;
+        width: 100%;
         
     }
 
     .github {
-        width: 1.5em;
-        height: 1em;
+        width: 3em;
+        height: 2em;
+    }
+
+    #contactForm {
+        font-size: x-large;
     }
 
     input, textarea {
         font-size: larger;
         width: 90%;
+        margin-bottom: 5px;
     }
 }
