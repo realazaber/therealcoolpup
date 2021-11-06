@@ -2,6 +2,7 @@
     --blue: #3D7AF3;
     --cyan: #22C1E0;
     --white: #FCFDFF;
+    --darkwhite: #fcfdffd0;
 }
 
 body {
@@ -91,6 +92,22 @@ a:hover {
     padding-right: 1em;
 }
 
+#projectsList {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 30%);
+}
+
+.project {
+    background-color: var(--darkwhite);
+    background-color: red;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    height: 250px;
+    margin: 5px;
+}
+
 
 
 #contact {
@@ -98,7 +115,7 @@ a:hover {
 }
 
 .inputField, #contactForm {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #contactForm {
@@ -113,9 +130,10 @@ a:hover {
     font-size: larger;
 }
 
-input {
-    border: 1px solid grey;
+input, textarea {
+    border: 1px solid #979797;
     padding: 15px;
+    width: 50%;
 }
 
 #btnSubmit {
