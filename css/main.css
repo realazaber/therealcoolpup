@@ -44,18 +44,10 @@ body {
     color: var(--cyan);   
 }
 
-
-
-
-
-
-
-
-
 .project {
   position: relative;
   width: 80%;
-  
+
 }
 .projectImage {
   opacity: 1;
@@ -92,9 +84,8 @@ body {
 }
 
 .projectText {
-  
   color: var(--blue);
-  font-size: 20px;
+  font-size: 30px;
   
 }
 
@@ -131,7 +122,7 @@ body {
 input, textarea {
     border: 1px solid #979797;
     padding: 15px;
-    width: 50%;
+    
 }
 
 #btnSubmit {
@@ -154,7 +145,7 @@ input, textarea {
 
 
 /* Tablets and Desktop */
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 850px) {
     nav {
         position: fixed;
         right: 1em;
@@ -214,12 +205,23 @@ input, textarea {
     #projectsList {
         display: grid;
         justify-content: center;
+        justify-items: center;
         grid-template-columns: repeat(3, 30%);
+    }
+
+    .projectText {
+    
+        font-size: 30px;
+        
+    }
+
+    input, textarea {
+        width: 50%;
     }
 }
 
 /* Mobile */
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 850px) {
     nav {
         visibility: hidden;
     }
@@ -247,7 +249,19 @@ input, textarea {
     #projectsList {
         display: grid;
         justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(1, 90%);
         
-        grid-template-columns: repeat(1, 100%);
+    }
+
+    .projectText {
+    
+        font-size: 1em;
+        
+    }
+
+    input, textarea {
+        font-size: larger;
+        width: 90%;
     }
 }
