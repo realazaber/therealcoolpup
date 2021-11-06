@@ -129,7 +129,7 @@ input, textarea {
     border: 3px solid var(--cyan);
     color: var(--cyan);
     margin-top: 10px;
-    font-size: larger;
+    font-size: large;
     padding: 20px 40px;
     transition-duration: 500ms;
 }
@@ -215,6 +215,7 @@ input, textarea {
 
     #contactForm {
         font-size: x-large;
+        width: 30%;
     }
 
     input, textarea {
@@ -276,5 +277,11 @@ input, textarea {
         font-size: larger;
         width: 90%;
         margin-bottom: 5px;
+    }
+
+    #btnSubmit {
+        
+        font-size: larger;
+
     }
 }
