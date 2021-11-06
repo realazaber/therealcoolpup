@@ -33,7 +33,7 @@ nav {
     z-index: 2;
 }
 
-a {
+nav a {
     margin: 10px;
     padding: 10px;
 
@@ -54,7 +54,7 @@ a {
         
 }
 
-a:hover {
+nav a:hover {
     font-size: 30px;
     transition: ease;
     transition-duration: 500ms;
@@ -99,14 +99,59 @@ a:hover {
 }
 
 .project {
-    background-color: var(--darkwhite);
-    background-color: red;
-    text-align: center;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    height: 250px;
-    margin: 5px;
+  position: relative;
+  width: 80%;
 }
+.projectImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.projectInfo {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project:hover .projectImage {
+  opacity: 0.3;
+  
+}
+
+.project:hover .projectInfo {
+  opacity: 1;
+}
+
+.projectText {
+  
+  color: var(--blue);
+  font-size: 20px;
+  
+}
+
+.github {
+
+    margin-top: auto;   
+    opacity: 0.5;
+    width: 20%;
+    height: 20%;
+}
+
+
 
 
 
@@ -114,7 +159,7 @@ a:hover {
     background-color: var(--blue);
 }
 
-.inputField, #contactForm {
+.inputField, #contactForm, .projectImg {
     border-radius: 10px;
 }
 
