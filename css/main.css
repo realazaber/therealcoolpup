@@ -90,7 +90,6 @@ body {
 }
 
 .github {
-
     margin-top: auto;   
     opacity: 0.5;
     width: 20%;
@@ -210,8 +209,7 @@ input, textarea {
     }
 
     .projectText {
-    
-        font-size: 30px;
+        font-size: large;
         
     }
 
@@ -256,8 +254,13 @@ input, textarea {
 
     .projectText {
     
-        font-size: 1em;
+        font-size: medium;
         
+    }
+
+    .github {
+        width: 30%;
+        height: 20%;
     }
 
     input, textarea {
