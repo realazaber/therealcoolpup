@@ -50,15 +50,12 @@ body {
 
 
 
-#projectsList {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 30%);
-}
+
 
 .project {
   position: relative;
   width: 80%;
+  
 }
 .projectImage {
   opacity: 1;
@@ -108,9 +105,6 @@ body {
     width: 20%;
     height: 20%;
 }
-
-
-
 
 
 #contact {
@@ -216,6 +210,12 @@ input, textarea {
         flex-basis: 50%;
         text-align: center;
     }
+
+    #projectsList {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 30%);
+    }
 }
 
 /* Mobile */
@@ -242,5 +242,12 @@ input, textarea {
         font-size: larger;
         padding: 10px;
         text-align: center;
+    }
+
+    #projectsList {
+        display: grid;
+        justify-content: center;
+        
+        grid-template-columns: repeat(1, 100%);
     }
 }
