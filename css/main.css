@@ -8,7 +8,6 @@
 body {
     background-color: var(--white);
     margin: 0;
-
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -27,50 +26,16 @@ body {
     margin: -1;
 }
 
-nav {
-    position: fixed;
-    right: 1em;
-    top: 100px;
-    margin-right: 3em;
-    z-index: 2;
-}
-
-nav a {
-    margin: 10px;
-    padding: 10px;
-
-    font-size: 20px;
-    text-decoration: none;
-    
-    text-align: center;
-    color: var(--cyan);
-    
-    font-family: Helvetica;
-    background-color: var(--white);
-
-    border: 1px solid transparent;
-    border-radius: 20px;
-
-    transition: ease;
-    transition-duration: 300ms;
-        
-}
-
-nav a:hover {
-    font-size: 25px;
-    transition: ease;
-    transition-duration: 300ms;
-    text-decoration: none;
-}
 
 #welcomeText {
     
-    text-align: right;
-    
     color: var(--cyan);
     padding: 100px;
-    padding-right: 300px;
     z-index: 3;
+
+    text-align: right;
+    padding-right: 300px;
+    
 }
 
 #about {
@@ -79,21 +44,11 @@ nav a:hover {
     color: var(--cyan);   
 }
 
-#aboutMe {
-    flex-basis: 50%;
-    text-align: center;
-}
 
-#mainInfo {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
 
-#profileImg {
-    padding-right: 1em;
-    
-}
+
+
+
 
 #projectsList {
     display: grid;
@@ -200,4 +155,92 @@ input, textarea {
     border: 3px solid var(--blue);
     color: var(--blue);
     transition-duration: 500ms;
+}
+
+
+
+/* Tablets and Desktop */
+@media only screen and (min-width: 690px) {
+    nav {
+        position: fixed;
+        right: 1em;
+        top: 100px;
+        margin-right: 3em;
+        z-index: 2;
+    }
+    
+    nav a {
+        margin: 10px;
+        padding: 10px;
+    
+        font-size: 20px;
+        text-decoration: none;
+        
+        text-align: center;
+        color: var(--cyan);
+        
+        font-family: Helvetica;
+        background-color: var(--white);
+    
+        border: 1px solid transparent;
+        border-radius: 20px;
+    
+        transition: ease;
+        transition-duration: 300ms;
+            
+    }
+    
+    nav a:hover {
+        font-size: 25px;
+        transition: ease;
+        transition-duration: 300ms;
+        text-decoration: none;
+    }
+
+    #welcomeText {
+        text-align: right;
+        padding-right: 300px;   
+    }
+
+    #mainInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    #profileImg {
+        padding-right: 1em;
+    }
+
+    #aboutMe {
+        flex-basis: 50%;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 690px) {
+    nav {
+        visibility: hidden;
+    }
+
+    #welcomeText {
+    
+        color: var(--cyan);
+        padding: 100px;
+        z-index: 3;
+    
+        text-align: center;
+        
+    }
+
+    #profileImg {
+        width: 80%;
+    }
+
+    #aboutMe {
+        font-size: larger;
+        padding: 10px;
+        text-align: center;
+    }
 }
