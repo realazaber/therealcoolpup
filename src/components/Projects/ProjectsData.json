@@ -1,0 +1,9 @@
+[
+    {
+        "img": "projectImgs/java-project-management.png",
+        "altTxt": "Java project management app",
+        "description": "Project management app made in Java using the Java FX library for the GUI and jdbc for the mySQL database.",
+        "linkRepo": "https://github.com/therealcoolpup/java-project-management-app",
+        "linkWebsite": "https://therealcoolpup.github.io/java-project-management-app/"   
+    }    
+]
