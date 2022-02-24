@@ -1,4 +1,3 @@
 - 👋 Hi, I’m @therealcoolpup.
 - 👀 I’m interested in everything to do with computers.
-- 🌱 I’m currently Next JS and using Wordpress as a headless CMS.
 - 📫 You can reach me by sending a message on my portfolio site.
